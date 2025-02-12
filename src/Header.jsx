@@ -1,9 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const Header = () => {
+	const navigate=useNavigate()
   return (
     <header>
-			<img class="position-absolute top-0 start-0" src="./sunflower.jpg" alt="fa" id="logo" />
+		<a href="#" onClick={()=>navigate("/")}>
+
+			<img src="./sunflower.jpg" alt="fa" id="logo" />
+		</a>
 			<h1>Nevenincs Bt.</h1>
 			<h2>Vetőmagok - Mindenféle, minden mennyiségben</h2>
 	</header>
